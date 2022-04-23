@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Twoja lista zadań!</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Szymon Stawowy">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Div for buttons -->
+    <div id="buttons">
+
+        <form id="wtd">
+
+            <input type="text" placeholder="What u must do?" id="toText">
+
+            <select id="selectValue">
+                <option value="toDo">ToDo</option>
+                <option value="toChange">ToChange</option>
+                <option value="toRepair">ToRepair</option>
+            </select>
+
+            <input type="button" value="Dodaj!" id="button" onclick="add_element()">
+        </form>
+
+    </div>
+
+    <!-- Container for ToDo options. -->
+    <div id="toOptions">
+
+        <!-- ToDo Option -->
+        <div class="toList">
+            <h4 style="color: green;">ToDo</h4>
+            <ol id="toDo_ol"></ol>
+        </div>
+
+        <!-- ToFix Option -->
+        <div class="toList">
+            <h4 style="color: orange;">ToChange</h4>
+            <ol id="toChange_ol"></ol>
+        </div>
+
+        <!-- ToRepair Option -->
+        <div class="toList">
+            <h4 style="color: red;">ToRepair</h4>
+            <ol id="toRepair_ol"></ol>
+        </div>
+
+    </div>
+</body></html>
